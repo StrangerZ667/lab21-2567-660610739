@@ -114,7 +114,6 @@ export default function StudentPage() {
       </Paper>
       <Paper withBorder p="md">
         <Title order={4}>My Course(s)</Title>
-        /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
         {myEnrollments &&
           myEnrollments.map((enroll:any) => (
             <Group my="xs" key={enroll.courseNo}>
@@ -131,7 +130,6 @@ export default function StudentPage() {
               </Button>
             </Group>
           ))}
-        /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
         {myEnrollments && myEnrollments.length === 0 && (
           <Text color="dimmed" size="sm">
             You have not enrolled any course yet!
