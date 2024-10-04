@@ -187,3 +187,4 @@ export const DELETE = async (request: NextRequest) => {
       message: "You have successfully dropped this course. See you next semester.",
     });
 };
+ 
