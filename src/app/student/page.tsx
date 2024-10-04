@@ -116,10 +116,10 @@ export default function StudentPage() {
         <Title order={4}>My Course(s)</Title>
 
         {myEnrollments &&
-          myEnrollments.map((enroll: any) => (
+          myEnrollments.map((enroll: Course) => (
             <Group my="xs" key={enroll.courseNo}>
               <Text>
-                {enroll.courseNo} - {enroll.course.title}
+                {enroll.courseNo} - {enroll.title}
               </Text>
               <Button
                 color="red"
