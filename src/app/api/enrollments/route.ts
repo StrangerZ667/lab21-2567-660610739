@@ -155,7 +155,6 @@ export const DELETE = async (request: NextRequest) => {
 
   const prisma = getPrisma();
 
-  try {
     // Find the enrollment based on studentId and courseNo
     const enrollment = await prisma.enrollment.findUnique({
       where: {
@@ -187,7 +186,4 @@ export const DELETE = async (request: NextRequest) => {
       ok: true,
       message: "You have successfully dropped this course. See you next semester.",
     });
-
-  } catch (error) {
-  }
 };
