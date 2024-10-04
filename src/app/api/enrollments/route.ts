@@ -1,5 +1,5 @@
 import { checkToken } from "@lib/checkToken";
-import { Database, Payload } from "@lib/types";
+import { Payload } from "@lib/types";
 import { NextRequest, NextResponse } from "next/server";
 import { getPrisma } from "@lib/getPrisma";
 
@@ -189,12 +189,5 @@ export const DELETE = async (request: NextRequest) => {
     });
 
   } catch (error) {
-    return NextResponse.json(
-      {
-        ok: false,
-        message: "An error occurred while dropping the course.",
-      },
-      { status: 500 }
-    );
   }
 };
