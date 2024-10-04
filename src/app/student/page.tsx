@@ -119,7 +119,7 @@ export default function StudentPage() {
           myEnrollments.map((enroll: Course) => (
             <Group my="xs" key={enroll.courseNo}>
               <Text>
-                {enroll.courseNo} - {enroll.title}
+                {enroll.courseNo} - {enroll.course.title}
               </Text>
               <Button
                 color="red"
