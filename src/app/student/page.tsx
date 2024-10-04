@@ -116,7 +116,7 @@ export default function StudentPage() {
         <Title order={4}>My Course(s)</Title>
 
         {myEnrollments &&
-          myEnrollments.map((enroll: Course) => (
+          myEnrollments.map((enroll:any) => ( // eslint-disable-next-line @typescript-eslint/no-explicit-any
             <Group my="xs" key={enroll.courseNo}>
               <Text>
                 {enroll.courseNo} - {enroll.course.title}
